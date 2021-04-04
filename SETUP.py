@@ -7,22 +7,22 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.0.13'
-DESCRIPTION = 'Streaming video data via networks'
-LONG_DESCRIPTION = 'A package that allows to build simple streams of video, audio and camera data.'
+VERSION = '0.0.1'
+DESCRIPTION = 'Create String Time Stamp'
+LONG_DESCRIPTION = 'A Package that allows creating a string of numerical digits representing the exact time at which a program was executed. This is particularly useful for saving files'
 
 # Setting up
 setup(
-    name="vidstream",
+    name="timeStampBySW",
     version=VERSION,
-    author="NeuralNine (Florian Dedov)",
-    author_email="<mail@neuralnine.com>",
+    author="Samuwa",
+    author_email="samuel.wainberg@gmail.com",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=long_description,
     packages=find_packages(),
-    install_requires=['opencv-python', 'pyautogui', 'pyaudio'],
-    keywords=['python', 'video', 'stream', 'video stream', 'camera stream', 'sockets'],
+    install_requires=[datetime],
+    keywords=['python', 'timestamp'],
     classifiers=[
         "Development Status :: 1 - Planning",
         "Intended Audience :: Developers",
